@@ -1,0 +1,24 @@
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/functions';
+@import './styles/partials/base';
+@import './styles/partials/form';
+@import './styles/partials/list';
+
+.app {
+  font-family: $font-family;
+  background-color: $background-color;
+  padding: 20px;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  form {
+    @include form-style;
+  }
+
+  .occurrence {
+    @include occurrence-style;
+  }
+}
